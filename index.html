@@ -1,4 +1,3 @@
-index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,57 +5,96 @@ index.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tim Williams LLC – Missouri Remote Online Notary</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-        header { background: #003366; color: white; padding: 20px; text-align: center; }
-        nav { background: #0055a5; padding: 10px; text-align: center; }
+        body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+        header { background: #003366; color: white; padding: 40px 20px; display: flex; align-items: center; justify-content: center; gap: 20px; }
+        .logo { font-size: 48px; font-weight: bold; letter-spacing: 2px; }
+        nav { background: #0055a5; padding: 12px; text-align: center; position: sticky; top: 0; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
         nav a:hover { text-decoration: underline; }
-        .container { max-width: 900px; margin: auto; background: white; padding: 20px; }
-        h1, h2 { color: #003366; }
-        footer { background: #003366; color: white; text-align: center; padding: 15px; margin-top: 40px; }
-        .button { display: inline-block; background: #0055a5; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        .section { max-width: 900px; margin: 40px auto; background: white; padding: 30px; border-radius: 8px; }
+        h2 { color: #003366; margin-top: 0; }
+        .button { display: inline-block; background: #0055a5; color: white; padding: 12px 22px; text-decoration: none; border-radius: 5px; font-size: 16px; }
         .button:hover { background: #003f7f; }
+        footer { background: #003366; color: white; text-align: center; padding: 30px; margin-top: 40px; }
+        .footer-logo { font-size: 36px; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px; }
+        ul { line-height: 1.7; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Tim Williams LLC</h1>
-    <p>Missouri Remote Online Notary (RON)</p>
+    <div class="logo">TW</div>
+    <div>
+        <h1 style="margin: 0;">Tim Williams LLC</h1>
+        <p style="margin: 5px 0 0;">Missouri Remote Online Notary (RON)</p>
+        <a class="button" href="https://app.bluenotary.us/signing-room" target="_blank">Schedule Your Online Notary Session</a>
+    </div>
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="before-session.html">Before Your Session</a>
-    <a href="after-session.html">After Your Session</a>
-    <a href="Privacy.html">Privacy Policy</a>
-    <a href="Terms.html">Terms of Service</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#requirements">Requirements</a>
+    <a href="#why">Why Choose Me</a>
+    <a href="#contact">Contact</a>
+    <a href="before-session.html">Before Session</a>
+    <a href="after-session.html">After Session</a>
 </nav>
 
-<div class="container">
-    <h2>Welcome</h2>
-    <p>Tim Williams LLC provides secure, professional, and fully compliant Missouri Remote Online Notary (RON) services. Whether you're signing real estate documents, affidavits, power of attorney, or business forms — your notarization can be completed online, safely and efficiently.</p>
-
-    <h2>Book Your Appointment</h2>
-    <p>All sessions are completed through the secure BlueNotary platform.</p>
-    <a class="button" href="https://app.bluenotary.us/signing-room" target="_blank">Schedule Your Online Notary Session</a>
-
-    <h2>What You Need</h2>
+<div id="services" class="section">
+    <h2>Services</h2>
+    <p>I provide secure, compliant Missouri Remote Online Notary (RON) services for:</p>
     <ul>
-        <li>A valid, unexpired government-issued photo ID</li>
-        <li>A device with camera + microphone (phone, tablet, or computer)</li>
+        <li>Real estate documents</li>
+        <li>Power of Attorney</li>
+        <li>Affidavits & sworn statements</li>
+        <li>Business documents</li>
+        <li>Financial forms</li>
+        <li>General notarizations</li>
+    </ul>
+</div>
+
+<div id="pricing" class="section">
+    <h2>Pricing</h2>
+    <p>Flat, transparent pricing — no surprises.</p>
+    <ul>
+        <li><strong>$25</strong> — First notarized signature</li>
+        <li><strong>$5</strong> — Each additional notarized signature</li>
+        <li><strong>$10</strong> — Document upload assistance (optional)</li>
+    </ul>
+</div>
+
+<div id="requirements" class="section">
+    <h2>Requirements</h2>
+    <ul>
+        <li>Valid, unexpired government‑issued photo ID</li>
+        <li>Device with camera + microphone</li>
         <li>Stable internet connection</li>
         <li>Your documents ready to upload</li>
     </ul>
+</div>
 
-    <h2>Client Resources</h2>
-    <p><a href="before-session.html">Before Your Session</a> – Step-by-step checklist</p>
-    <p><a href="after-session.html">After Your Session</a> – What happens next</p>
+<div id="why" class="section">
+    <h2>Why Choose Me</h2>
+    <ul>
+        <li>Missouri‑commissioned Remote Online Notary</li>
+        <li>Professional, secure, and compliant process</li>
+        <li>Clear communication and step‑by‑step guidance</li>
+        <li>Fast scheduling through BlueNotary</li>
+        <li>Clean, simple, client‑friendly workflow</li>
+    </ul>
+</div>
+
+<div id="contact" class="section">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> tim@timwilliamsnotary.com</p>
+    <p><strong>Phone:</strong> (314) 252‑8875</p>
 </div>
 
 <footer>
+    <div class="footer-logo">TW</div>
     <p>© 2026 Tim Williams LLC – Missouri Remote Online Notary</p>
 </footer>
 
 </body>
-</html> 
+</html>
