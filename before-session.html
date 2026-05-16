@@ -1,4 +1,3 @@
-before-session.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,33 +5,34 @@ before-session.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Before Your Session – Tim Williams LLC</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-        header { background: #003366; color: white; padding: 20px; text-align: center; }
-        nav { background: #0055a5; padding: 10px; text-align: center; }
+        body { margin: 0; font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+        header { background: #003366; color: white; padding: 40px 20px; text-align: center; }
+        nav { background: #0055a5; padding: 12px; text-align: center; position: sticky; top: 0; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
         nav a:hover { text-decoration: underline; }
-        .container { max-width: 900px; margin: auto; background: white; padding: 20px; }
-        h1, h2 { color: #003366; }
-        footer { background: #003366; color: white; text-align: center; padding: 15px; margin-top: 40px; }
-        ul { line-height: 1.6; }
+        .section { max-width: 900px; margin: 40px auto; background: white; padding: 30px; border-radius: 8px; }
+        h1, h2 { color: #003366; margin-top: 0; }
+        ul { line-height: 1.7; }
+        .button { display: inline-block; background: #0055a5; color: white; padding: 12px 22px; text-decoration: none; border-radius: 5px; font-size: 16px; }
+        .button:hover { background: #003f7f; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Before Your Online Notary Session</h1>
-    <p>Tim Williams LLC – Missouri Remote Online Notary</p>
+    <h1 style="margin: 0;">Before Your Online Notary Session</h1>
+    <p style="margin: 5px 0 0;">Tim Williams LLC – Missouri Remote Online Notary (RON)</p>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="before-session.html">Before Your Session</a>
-    <a href="after-session.html">After Your Session</a>
+    <a href="before-session.html">Before Session</a>
+    <a href="after-session.html">After Session</a>
     <a href="Privacy.html">Privacy Policy</a>
     <a href="Terms.html">Terms of Service</a>
 </nav>
 
-<div class="container">
+<div class="section">
     <h2>Checklist: What You Need to Prepare</h2>
     <ul>
         <li><strong>Valid, unexpired government-issued photo ID</strong> (Driver’s License, Passport, State ID)</li>
@@ -52,12 +52,27 @@ before-session.html
 
     <h2>Join Your Session</h2>
     <p>Your notarization will take place through the secure BlueNotary platform.</p>
-    <p><a href="https://app.bluenotary.us/signing-room" target="_blank">Click here to join your session</a></p>
+    <p><a class="button" href="https://app.bluenotary.us/signing-room" target="_blank">Join Your Online Notary Session</a></p>
 </div>
 
-<footer>
-    <p>© 2026 Tim Williams LLC – Missouri Remote Online Notary</p>
+<footer style="background:#003366; color:white; padding:40px 20px;">
+    <div style="max-width:900px; margin:auto; display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:20px;">
+        
+        <div>
+            <div class="footer-logo" style="font-size:40px; font-weight:bold; letter-spacing:2px;">TW</div>
+            <p style="margin:5px 0;">© 2026 Tim Williams LLC</p>
+            <p style="margin:5px 0;">Missouri Remote Online Notary (RON)</p>
+        </div>
+
+        <div style="text-align:right;">
+            <p style="margin:5px 0;"><strong>Email:</strong> tim@timwilliamsnotary.com</p>
+            <p style="margin:5px 0;"><strong>Phone:</strong> (314) 252‑8875</p>
+            <p style="margin:5px 0;"><a href="index.html#contact" style="color:white; text-decoration:underline;">Contact</a></p>
+        </div>
+
+    </div>
 </footer>
 
 </body>
 </html>
+
