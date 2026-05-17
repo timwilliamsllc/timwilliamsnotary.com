@@ -4,69 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services – Tim Williams LLC</title>
-
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
+        body { margin:0; font-family:Arial,sans-serif; background:#f4f4f4; color:#333; }
+        header {
+            background:#003366; color:white; padding:30px 20px;
+            display:flex; align-items:center; justify-content:center; gap:25px;
         }
+        header .logo { font-size:60px; font-weight:bold; letter-spacing:2px; }
         nav {
-            background: #0055a5;
-            padding: 12px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            background:white; border-bottom:2px solid #003366;
+            padding:10px 0; text-align:center; position:sticky; top:0; z-index:1000;
         }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
+        nav a { color:#003366; margin:0 15px; text-decoration:none; font-weight:bold; }
+        nav a:hover { text-decoration:underline; }
         .section {
-            max-width: 1000px;
-            margin: 40px auto;
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
+            max-width:1000px; margin:30px auto; background:white;
+            padding:30px; border-radius:8px;
         }
-        h1, h2 {
-            color: #003366;
-            margin-top: 0;
-        }
-        p, ul {
-            line-height: 1.7;
-        }
+        h1, h2 { color:#003366; margin-top:0; }
+        p, ul { line-height:1.7; }
         .button {
-            background:#0055a5;
-            color:white;
-            padding:12px 22px;
-            border-radius:5px;
-            text-decoration:none;
-            font-weight:bold;
+            background:#0055a5; color:white; padding:10px 20px;
+            border-radius:5px; text-decoration:none; font-weight:bold;
+            display:inline-block;
         }
+        .button:hover { background:#003f7d; }
     </style>
 </head>
-
 <body>
 
-<header style="background:#003366; color:white; padding:40px 20px; display:flex; align-items:center; justify-content:center; gap:25px;">
-    <div style="font-size:60px; font-weight:bold; letter-spacing:2px;">
-        TW
-    </div>
-
+<header>
+    <div class="logo">TW</div>
     <div>
-        <h1 style="margin:0; font-size:32px; font-weight:bold;">Tim Williams LLC</h1>
-        <p style="margin:5px 0 10px; font-size:18px;">Missouri Remote Online Notary (RON)</p>
-
-        <a href="https://app.bluenotary.us/signing-room" target="_blank"
-           style="background:#0055a5; color:white; padding:12px 22px; border-radius:5px; text-decoration:none; font-weight:bold; font-size:16px;">
+        <h1 style="margin:0;">Tim Williams LLC</h1>
+        <p style="margin:5px 0 12px; font-size:18px;">Missouri Remote Online Notary (RON)</p>
+        <a href="https://app.bluenotary.us/signing-room" target="_blank" class="button">
             Schedule Your Online Notary Session
         </a>
     </div>
@@ -74,70 +46,63 @@
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="#general">General Notarizations</a>
-    <a href="#realestate">Real Estate</a>
-    <a href="#business">Business</a>
-    <a href="#special">Specialty Services</a>
+    <a href="Services.html">Services</a>
+    <a href="Pricing.html">Pricing</a>
+    <a href="Requirements.html">Requirements</a>
+    <a href="index.html#contact">Contact</a>
 </nav>
 
-<div class="section" id="general">
-    <h2>General Notarizations</h2>
-    <p>Fast, secure, and compliant Remote Online Notary services for everyday documents.</p>
-    <ul>
-        <li>Acknowledgments</li>
-        <li>Jurats</li>
-        <li>Affidavits</li>
-        <li>Identity verification forms</li>
-        <li>Permission slips</li>
-        <li>General sworn statements</li>
-    </ul>
+<div class="section">
+    <h2>Services</h2>
+    <p>
+        I provide Remote Online Notary (RON) services for Missouri signers and documents that can be
+        notarized under Missouri law using an approved online platform.
+    </p>
 </div>
 
-<div class="section" id="realestate">
-    <h2>Real Estate Documents</h2>
-    <p>Convenient online notarization for real estate transactions, closings, and property‑related documents.</p>
+<div class="section">
+    <h2>Common document types</h2>
     <ul>
-        <li>Quit Claim Deeds</li>
-        <li>Warranty Deeds</li>
-        <li>Loan documents</li>
-        <li>Refinance packages</li>
-        <li>Closing disclosures</li>
-        <li>Escrow documents</li>
+        <li>General acknowledgments</li>
+        <li>Jurats and sworn statements</li>
+        <li>Affidavits and declarations</li>
+        <li>Powers of attorney (where permitted)</li>
+        <li>Financial and banking forms</li>
+        <li>Business and employment documents</li>
+        <li>Other documents that require notarization under Missouri law</li>
     </ul>
+    <p>
+        If you are unsure whether your document can be notarized online, you may email a brief description
+        of the document (no sensitive details) before scheduling.
+    </p>
 </div>
 
-<div class="section" id="business">
-    <h2>Business & Legal Documents</h2>
-    <p>Professional notarization for business owners, legal professionals, and corporate clients.</p>
-    <ul>
-        <li>Contracts & agreements</li>
-        <li>Power of Attorney (POA)</li>
-        <li>Corporate resolutions</li>
-        <li>Compliance documents</li>
-        <li>Employment verification forms</li>
-        <li>Financial statements</li>
-    </ul>
+<div class="section">
+    <h2>How a typical session works</h2>
+    <ol>
+        <li>You schedule your session using the secure online booking link.</li>
+        <li>You upload your document and complete identity verification.</li>
+        <li>We meet in a secure audio‑video session to review and notarize your document.</li>
+        <li>You receive your completed, notarized document electronically.</li>
+    </ol>
+    <p>
+        All sessions are recorded and stored in compliance with Missouri RON requirements.
+    </p>
 </div>
 
-<div class="section" id="special">
-    <h2>Specialty Services</h2>
-    <p>Additional services tailored to unique needs and situations.</p>
-    <ul>
-        <li>Healthcare directives</li>
-        <li>Living wills</li>
-        <li>Parental consent forms</li>
-        <li>Travel authorization letters</li>
-        <li>Insurance documents</li>
-        <li>Multi‑signer sessions</li>
-    </ul>
-
-    <p><a class="button" href="Pricing.html">View Pricing</a></p>
+<div class="section">
+    <h2>Next steps</h2>
+    <p>
+        For information about fees, visit the Pricing page:
+    </p>
+    <p>
+        <a href="Pricing.html" class="button">View pricing</a>
+    </p>
 </div>
 
-<footer style="text-align:center; padding:20px; background:#003366; color:white; margin-top:40px;">
+<footer style="text-align:center; padding:15px; background:#003366; color:white; margin-top:30px;">
     © 2026 Tim Williams LLC — Missouri Remote Online Notary
 </footer>
 
 </body>
 </html>
-
