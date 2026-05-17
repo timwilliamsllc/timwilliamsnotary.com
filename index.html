@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tim Williams LLC – Missouri Remote Online Notary</title>
+
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #f4f4f4;
             color: #333;
+            scroll-behavior: smooth;
         }
+
         header {
             background:#003366;
             color:white;
@@ -19,12 +22,15 @@
             align-items:center;
             justify-content:center;
             gap:25px;
+            text-align:center;
         }
+
         header .logo {
             font-size:60px;
             font-weight:bold;
             letter-spacing:2px;
         }
+
         nav {
             background:white;
             border-bottom:2px solid #003366;
@@ -34,15 +40,18 @@
             top:0;
             z-index:1000;
         }
+
         nav a {
             color:#003366;
             margin:0 15px;
             text-decoration:none;
             font-weight:bold;
         }
+
         nav a:hover {
             text-decoration:underline;
         }
+
         .section {
             max-width:1000px;
             margin:30px auto;
@@ -50,13 +59,16 @@
             padding:30px;
             border-radius:8px;
         }
+
         h1, h2 {
             color:#003366;
             margin-top:0;
         }
+
         p, ul {
             line-height:1.7;
         }
+
         .button {
             background:#0055a5;
             color:white;
@@ -66,11 +78,13 @@
             font-weight:bold;
             display:inline-block;
         }
+
         .button:hover {
             background:#003f7d;
         }
     </style>
 </head>
+
 <body>
 
 <header>
@@ -85,14 +99,15 @@
 </header>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="Services.html">Services</a>
-    <a href="Pricing.html">Pricing</a>
-    <a href="Requirements.html">Requirements</a>
+    <a href="#welcome">Home</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#requirements">Requirements</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<div class="section">
+<!-- WELCOME -->
+<div id="welcome" class="section">
     <h2>Welcome</h2>
     <p>
         I provide secure, compliant Missouri Remote Online Notary (RON) services for individuals, families,
@@ -105,56 +120,62 @@
     </p>
 </div>
 
-<div class="section">
+<!-- SERVICES -->
+<div id="services" class="section">
     <h2>Services</h2>
     <p>
         I handle a wide range of documents, including personal, financial, and business paperwork that
         requires notarization under Missouri law.
     </p>
+
+    <ul>
+        <li>Affidavits & sworn statements</li>
+        <li>Power of Attorney (POA)</li>
+        <li>Real estate documents</li>
+        <li>Financial & banking forms</li>
+        <li>School, travel, and medical forms</li>
+        <li>Business agreements & contracts</li>
+    </ul>
+
     <p>
-        For a detailed list of supported document types and what to expect during your session, visit:
-    </p>
-    <p>
-        <a href="Services.html" class="button">View detailed services</a>
+        All notarizations are completed online through a secure, compliant platform with identity verification.
     </p>
 </div>
 
-<div class="section">
+<!-- PRICING -->
+<div id="pricing" class="section">
     <h2>Pricing</h2>
-    <p>
-        My pricing is simple and transparent. You will always know the cost before your session begins.
-    </p>
-    <p>
-        For a full breakdown of standard notarization fees and additional signatures, visit:
-    </p>
-    <p>
-        <a href="Pricing.html" class="button">View pricing details</a>
-    </p>
+    <ul>
+        <li><strong>Standard Notarization:</strong> $25</li>
+        <li><strong>Additional Notarized Signatures:</strong> $5 each</li>
+        <li><strong>Multi‑Signer Sessions:</strong> Supported</li>
+        <li><strong>Evening & Weekend Appointments:</strong> Available</li>
+    </ul>
 </div>
 
-<div class="section">
+<!-- REQUIREMENTS -->
+<div id="requirements" class="section">
     <h2>Requirements</h2>
-    <p>
-        Remote Online Notarization has specific requirements for identification, technology, and document
-        readiness. Reviewing these ahead of time helps your session go smoothly.
-    </p>
-    <p>
-        For a clear checklist of what you need before your appointment, visit:
-    </p>
-    <p>
-        <a href="Requirements.html" class="button">Review requirements</a>
-    </p>
+    <ul>
+        <li>Valid government‑issued photo ID</li>
+        <li>Stable internet connection</li>
+        <li>Ability to join a video session</li>
+        <li>Document ready to upload before the session</li>
+    </ul>
 </div>
 
+<!-- CONTACT -->
 <div id="contact" class="section">
     <h2>Contact</h2>
     <p><strong>Email:</strong> timwilliamsllcnotary@gmail.com</p>
+
     <p>
         <a href="https://app.bluenotary.us/signing-room" target="_blank" class="button">
             Schedule Your Online Notary Session
         </a>
     </p>
-    <p><strong>Availability:</strong> Available daily by appointment, including evenings and weekends.</p>
+
+    <p><strong>Availability:</strong> Daily by appointment, including evenings and weekends.</p>
     <p>
         I respond promptly to messages and booking requests, and I do my best to accommodate same‑day
         or short‑notice sessions when possible.
